@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "layout",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "Скомпилировать документацию",
+			"detail": "node documentation/compile_documentation.js"
+		},
+		{
+			"label": "cargo_debug",
+			"type": "shell",
+			"command": "cargo build --manifest-path ${workspaceFolder}/jsonschema2md/Cargo.toml"
+		},
+		{
+			"label": "cargo_release",
+			"type": "shell",
+			"command": "cargo build --release --manifest-path ${workspaceFolder}/jsonschema2md/Cargo.toml"
+		},
+		{
+			"label": "copy_jsonschema2md",
+			"type": "shell",
+			"command": "cp target/release/jsonschema2md $(dirname $(pwd))/documentation_compilator/jsonschema2md"
+		}
+	]
+}
