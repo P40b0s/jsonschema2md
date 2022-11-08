@@ -1,0 +1,46 @@
+html
+    head
+        style
+            include tree.css
+    body
+        .container
+            details(open)
+                summary
+                    span.property-name my project
+                    .title my title
+                    .description my description
+                .folder
+                    p Тип:
+                        span "string"
+                    p package.json
+                    details(open)
+                        summary static
+                        .folder
+                            details
+                                summary css
+                                .folder
+                                    p index.css
+                                    p template.css
+                                    table
+                                        tr
+                                            td.first-cell СВОЙСТВО
+                                            td.second-cell АХАХАХХАХ
+                                        tr
+                                            td.first-cell СВОЙСТВО
+                                            td.second-cell АХАХАХХАХ
+                            details(open)
+                                summary js
+                                .folder
+                                    p index.js
+                                    p jquery-min.js
+                            details
+                                summary img
+                                .folder
+                                    p banner.png
+                                    p foo.png
+                    details(open)
+                        summary templates
+                        .folder
+                            p index.html
+                            p template.html
+

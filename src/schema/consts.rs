@@ -1,0 +1,9 @@
+pub const PROPERTY : &str = "Свойство";
+pub const TYPE : &str = "Тип";
+pub const ID : &str = "Идентификатор";
+pub const REQUIRED : &str = "Обязательное";
+pub const DEFAULT : &str = "По умолчанию";
+pub const EXAMPLES : &str = "Примеры";
+pub const TITLE_COLOR : &str ="#698c2b";
+pub const PROPERTY_NAME_COLOR : &str ="#3180b4";
+pub const INDENTATION : &str = "  ";

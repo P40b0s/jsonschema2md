@@ -1,0 +1,88 @@
+body {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 800px;
+}
+
+details {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  max-height: 3.5em !important;
+  transition: all 0.1s ease;
+}
+details ::-webkit-details-marker {
+  display: none;
+}
+details > summary {
+  position: relative;
+  margin-top: 0.25em;
+  color: rgb(14, 14, 19);
+  padding: 0.1em 0.5em 0.2em;
+  background: rgb(250, 225, 225);
+}
+details > summary:before {
+  color: #eee;
+  font-size: 0.5em;
+  margin-right: 0.5em;
+}
+details[open] > summary {
+  background: rgb(201, 251, 255);
+  color: rgb(0, 0, 0);
+  border-left: 0.1em rgb(9, 218, 255) solid;
+  border-bottom: 0.1em rgb(9, 218, 255) solid;
+}
+details[open] > summary:before {
+  color: #ccc;
+}
+
+.folder {
+  margin: 0 0 0.5em 0.86em;
+  padding: 0.5em 0em 0.5em 1.5em;
+  border-left: 0.1em rgb(9, 218, 255) solid;
+  border-bottom: 0.1em rgb(9, 218, 255) solid;
+}
+.folder p {
+  margin: 0;
+}
+details[open] {
+  height: auto;
+  max-height: 99em !important;
+  transition: all 1.2s ease;
+}
+
+.first-cell
+{
+  padding: 0.3em 0em 0.3em 1.5em;
+  border: 0.1em rgb(0, 0, 0) solid;
+  width: 200px;
+}
+.second-cell
+{
+  border: 0.1em rgb(0, 0, 0) solid;
+  min-width: 400px;
+  padding: 0.3em 0em 0.3em 1.5em;
+}
+.property-name
+{
+  background-color: #dcffb4;
+  font-weight: 600;
+}
+.title
+{
+  margin: 0.1em 0 0.1em 1em;
+}
+.description
+{
+  margin: 0 0 0.5em 1em;
+}
+
+details:not([open]) .folder {
+  height: 0px !important;
+}/*# sourceMappingURL=tree.css.map */
